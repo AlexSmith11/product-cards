@@ -1,0 +1,62 @@
+[
+    {
+        "name": "The Sinagpore Grand Prix and southeast Asia discovery",
+        "usp": [
+            {
+                "text": "SALE EXCLUSIVE: from £1,999 per couple",
+                "type": "sale"
+            }
+        ],
+        "category": "River Cruises",
+        "description": "Watch the thrilling Singapore Grand Prix, then enjoy a southeast Asia cruise",
+        "departureDate": [
+            "2021-04-10",
+            "2021-05-10",
+            "2021-06-10",
+            "2021-07-10"
+        ],
+        "duration": 16,
+        "price": 1899,
+        "currency_symbol": "£",
+        "logo": "https://i.assetzen.net/i/CPHSGoywRdpQ/w:0/h:45/q:70.png",
+        "image": "https://i.assetzen.net/i/RsMO769ugKzW/w:0/h:0/q:70.jpg"
+    },
+    {
+        "name": "Enjoy a luxury 'no-fly' holiday on the Venice Simplon",
+        "usp": [
+            {
+                "text": "SALE EXCLUSIVE: from £3,999 per couple",
+                "type": "sale"
+            }
+        ],
+        "category": "Ocean Cruises",
+        "description": "Watch the thrilling Singapore Grand Prix, then enjoy a southeast Asia cruise",
+        "departureDate": [
+            "2021-04-15"
+        ],
+        "duration": 16,
+        "price": 4229,
+        "currency_symbol": "£",
+        "logo": "https://i.assetzen.net/i/dryfYBr463XF/w:0/h:45/q:70.png",
+        "image": "https://i.assetzen.net/i/MYZOpRhb82vq/w:0/h:0/q:70.jpg"
+    },
+    {
+        "name": "Discover the wildlife of Borneo",
+        "usp": [
+            {
+                "text": "Hurry, only a few places left",
+                "type": "flash_sale"
+            }
+        ],
+        "category": "Escorted tour",
+        "description": "Eight-day Borneo tour, exploring one of the most culturally fascinating destinations.",
+        "departureDate": [
+            "2021-10-09"
+        ],
+        "duration": 10,
+        "price": 1229,
+        "currency_symbol": "£",
+        "logo": "https://i.assetzen.net/i/Xp71hdDTNJY4/w:0/h:45/q:70.png",
+        "image": "https://i.assetzen.net/i/026LPpZVihMH/w:0/h:0/q:70.jpg"
+    }
+]
