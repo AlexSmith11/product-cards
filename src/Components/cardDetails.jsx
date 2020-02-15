@@ -1,5 +1,5 @@
 import React from 'react';
-import "./card.css";
+import "../card.css";
 
 /**
  * individual card component. Saves code reuse.
@@ -11,7 +11,7 @@ const Card = props => {
     return (
         <div className="card text-center shadow">
             <div className="overflow">
-                <img src={props.imgsrc} alt="Image 3 - Mountain" className='card-img-top' />
+                <img src={props.imgsrc} alt="Image Header" className='card-img-top' />
             </div>
             <div className="card-body text-dark">
                 <h4 className="card-title">{props.title}</h4>

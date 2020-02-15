@@ -1,10 +1,14 @@
+import Axios from "axios";
 /**
- * test axios api call - ignore
+ * axios API call that is not used in this test, but would
+ * be implemented when using an actual API to get info.
+ * 
+ * Replace filepath with link and add any params such as
+ * a token if needed.
  */
-export const getEvents = async () => {
+export const getData = async () => {
       return Axios.get(
-        "https:www.get",
-        { headers: { Authorization: "gredfsfbghdstyh" } }
+        "../json_array.json",
       ).then(response => {
         return response;
       });
