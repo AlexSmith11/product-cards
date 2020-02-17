@@ -48,7 +48,7 @@ class Cards extends Component {
      * is that we are looping over local data from the json file that we can just import.
      * 
      * If I were fetching data from an actual API, I would use the axios utility I have created 
-     * (api.js) and run the data through the code below, then sending the data to the card 
+     * (api.js) and run the data through the code below, then send the data to the card 
      * components.
      */
     // state = {
@@ -70,7 +70,7 @@ class Cards extends Component {
     //     const data = dataResponse.data
     //     console.log(data)
 
-    //     // Once data has been fetched, rerender with it
+    //     // Once data has been fetched, rerender with it.
     //     this.setState({
     //         cardData: data,
     //         loading: false
