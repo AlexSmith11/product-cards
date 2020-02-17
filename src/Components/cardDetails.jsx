@@ -20,15 +20,22 @@ const Card = props => {
     return (
         <div class="col-md-4 col-xs-6 mt-3">
             <div className="card text-left shadow">
-              
+
                 <div className="card-body text-dark">
                     <div className="image-top">
                         <img src={props.image} alt="Image Header" className='card-img-top' />
+                        <div className="card-category">
+                            {props.category}
+                        </div>
                         <div>
                             {props.imageType == 'sale' ?
-                                <h6 className="card-img-text" style={{ color: 'black' }}>{props.imageText}</h6>
+                                <h6 className="card-img-text" style={{ color: 'black', backgroundColor: 'yellow' }}>
+                                    <span>{props.imageText} &nbsp;</span>
+                                </h6>
                                 :
-                                <h6 className="card-img-text" style={{ color: 'white' }}>{props.imageText}</h6>
+                                <h6 className="card-img-text" style={{ color: 'white', backgroundColor: 'red' }}>
+                                    <span>{props.imageText} &nbsp;</span>
+                                </h6>
                             }
                         </div>
                     </div>
@@ -49,12 +56,12 @@ const Card = props => {
                     }
                     <h4 className="card-title">{props.title}</h4>
                     <p className="card-text text-secondary">{props.description}</p>
-                    <p className="card-duration">{props.duration} days from:</p>
                     <div className="card-bottom-row">
+                        <p className="card-duration"><span>{props.duration} days from:</span></p>
                         <span className="card-price">{props.currency}{props.price}</span>
                         <span className="card-price_unit">pp</span>
                         <div className="card-bottom-row-right">
-                            <a href="#" className="btn btn-outline-success">Explore trip</a>
+                            <a href="#" className="btn btn-lg btn-primary">Explore trip</a>
                         </div>
                     </div>
                 </div>

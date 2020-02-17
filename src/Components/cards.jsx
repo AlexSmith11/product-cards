@@ -23,6 +23,7 @@ class Cards extends Component {
                     {AllData.map((card) => {
                         return <Card
                             image={card.image}
+                            category={card.category}
                             imageText={card.usp[0].text}
                             imageType={card.usp[0].type}
                             logo={card.logo}

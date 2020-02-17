@@ -38,7 +38,19 @@ p {
     position: relative;
     text-align: center;
 }
+.card-category{
+    font-size: 12px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.750);
+    text-transform:uppercase;
+}
 .card-img-text{
+    font-size: 12px;
+    padding: 6px;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -49,6 +61,7 @@ p {
 }
 
 .card-departure-date{
+    font-size: 12px;
     padding-left: 0.5rem;
 }
 
@@ -72,6 +85,7 @@ p {
 }
 
 .card-duration{
+    font-size: 12px;
     padding-left: 0.5rem;
 }
 
@@ -85,8 +99,13 @@ p {
 }
 
 .card-bottom-row-right {
-    padding: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
     float: right;
+}
+
+.btn{
+    font-size: 12px !important;
 }
 
 .container-fluid .row {
