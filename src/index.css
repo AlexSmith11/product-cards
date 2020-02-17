@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/**
+ * Grab our fonts
+ */
+ @font-face{
+  font-family: 'Gill Sans MT';
+  src: 
+    local('GillSansMTLight'),
+    local('GillSansMTMed'),
+    url(./fonts/GillSansMTStd-Light.woff2),
+    url(./fonts/GillSansMTStd-Medium.woff2);
+}
+
+@font-face{
+  font-family: 'Times Digital';
+  src:
+    local('TimesDigital'),
+    local('TimesModernReg'),
+    local('TimesModernLight'),
+    url(./fonts/TimesDigitalW04-Regular.woff2),
+    url(./fonts/TimesModern-Regular.woff2),
+    url(./fonts/TimesModern-Light.woff2);
+}

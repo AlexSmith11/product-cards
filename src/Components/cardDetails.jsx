@@ -21,7 +21,7 @@ const Card = props => {
         <div class="col-md-4 col-xs-6 mt-3">
             <div className="card text-left shadow">
 
-                <div className="card-body text-dark">
+                <div className="card__body text-dark">
                     <div className="image-top">
                         <img src={props.image} alt="Image Header" className='card-img-top' />
                         <div className="card-category">
@@ -29,22 +29,22 @@ const Card = props => {
                         </div>
                         <div>
                             {props.imageType == 'sale' ?
-                                <h6 className="card-img-text" style={{ color: 'black', backgroundColor: 'yellow' }}>
+                                <h6 className="image-top__text" style={{ color: 'black', backgroundColor: 'yellow' }}>
                                     <span>{props.imageText} &nbsp;</span>
                                 </h6>
                                 :
-                                <h6 className="card-img-text" style={{ color: 'white', backgroundColor: 'red' }}>
+                                <h6 className="image-top__text" style={{ color: 'white', backgroundColor: 'red' }}>
                                     <span>{props.imageText} &nbsp;</span>
                                 </h6>
                             }
                         </div>
                     </div>
 
-                    <div className="card-logo">
+                    <div className="card__logo">
                         <img src={props.logo} class="img-fluid"></img>
                     </div>
                     {props.departure.length > 1 ?
-                        <p className="card-departure-date">Departing on: {
+                        <p className="card__departureDate">Departing on: {
                             new Intl.DateTimeFormat('en-GB', {
                                 month: 'long',
                                 day: '2-digit',
@@ -52,17 +52,15 @@ const Card = props => {
                             }).format(new Date(props.departure[0]))
                         }</p>
                         :
-                        <p className="card-departure-date">Multiple departure dates</p>
+                        <p className="card__departureDate">Multiple departure dates</p>
                     }
-                    <h4 className="card-title">{props.title}</h4>
-                    <p className="card-text text-secondary">{props.description}</p>
-                    <div className="card-bottom-row">
-                        <p className="card-duration"><span>{props.duration} days from:</span></p>
-                        <span className="card-price">{props.currency}{props.price}</span>
-                        <span className="card-price_unit">pp</span>
-                        <div className="card-bottom-row-right">
-                            <a href="#" className="btn btn-lg btn-primary">Explore trip</a>
-                        </div>
+                    <h4 className="card__title">{props.title}</h4>
+                    <p className="card__text text-secondary">{props.description}</p>
+                    <p className="card__duration"><span>{props.duration} days from:</span></p>
+                    <span className="card__price">{props.currency}{props.price}</span>
+                    <span className="card__priceUnit">pp</span>
+                    <div className="card__bottomRowRight">
+                        <a href="#" className="btn btn-lg btn-primary">Explore trip</a>
                     </div>
                 </div>
 

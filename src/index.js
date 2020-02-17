@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
+import './fonts/GillSansMTStd-Light.woff2';
+import './fonts/GillSansMTStd-Medium.woff2';
+import './fonts/TimesDigitalW04-Regular.woff2';
+import './fonts/TimesModern-Light.woff2';
+import './fonts/TimesModern-Regular.woff2';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './Components/cards'
 

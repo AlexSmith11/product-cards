@@ -1,5 +1,4 @@
 /* Make the page background look different to the card background */
-
 body {
     background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
     padding-bottom: 4rem;
@@ -12,7 +11,6 @@ p {
 /**
  * Determines # of rows depending on screen width
  */
-
 .row>div[class*='col-'] {
     display: flex;
     flex: 1 0 auto;
@@ -26,7 +24,7 @@ p {
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.25) !important
 }
 
-.card-body {
+.card__body {
     padding: 0rem;
     padding-left: 0rem
 }
@@ -47,58 +45,69 @@ p {
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.750);
     text-transform:uppercase;
+    font-family: 'Gill Sans MT';
 }
-.card-img-text{
+.image-top__text{
     font-size: 12px;
     padding: 6px;
     position: absolute;
     bottom: 0px;
     left: 0px;
+    font-family: 'Gill Sans MT';
+
 }
 
-.card-logo{
+.card__logo{
     padding-left: 0.5rem;
 }
 
-.card-departure-date{
+.card__departureDate{
     font-size: 12px;
     padding-left: 0.5rem;
+    font-family: 'Gill Sans MT';
 }
 
 /** 
  * Text overflow! Though, this wont work on older browsers.
  */
- .card-title {
+ .card__title {
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
     overflow: hidden;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+    font-family: 'Times Digital';
 }
 
-.card-text {
+.card__text {
     padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-size: 1rem;
     padding-bottom: 1rem;
+    font-family: 'Times Digital';
 }
 
-.card-duration{
+.card__duration{
     font-size: 12px;
     padding-left: 0.5rem;
+    font-family: 'Times Digital';
 }
 
-.card-price {
+.card__price {
     padding-left: 0.5rem;
     font-size: 26px;
+    font-family: 'Times Digital';
 }
 
-.card-price_unit {
-    font-size: 12px
+.card__priceUnit {
+    font-size: 12px;
+    font-family: 'Times Digital';
 }
 
-.card-bottom-row-right {
+.card__bottomRowRight {
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
     float: right;
@@ -106,6 +115,7 @@ p {
 
 .btn{
     font-size: 12px !important;
+    font-family: 'Gill Sans MT';
 }
 
 .container-fluid .row {
