@@ -43,7 +43,7 @@ const Card = props => {
                     <div className="card__logo">
                         <img src={props.logo} class="img-fluid"></img>
                     </div>
-                    {props.departure.length > 1 ?
+                    {props.departure.length == 1 ?
                         <p className="card__departureDate">Departing on: {
                             new Intl.DateTimeFormat('en-GB', {
                                 month: 'long',
