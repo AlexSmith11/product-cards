@@ -22,9 +22,17 @@ class Cards extends Component {
                 <div className="row">
                     {AllData.map((card) => {
                         return <Card
-                            imgsrc={card.image}
+                            image={card.image}
+                            imageText={card.usp[0].text}
+                            imageType={card.usp[0].type}
+                            logo={card.logo}
+                            departure={card.departureDate}
                             title={card.name}
-                            description={card.description} />
+                            description={card.description}
+                            duration={card.duration}
+                            currency={card.currency_symbol}
+                            price={card.price}
+                            />
                     })}
                 </div>
             </div>
@@ -38,8 +46,9 @@ class Cards extends Component {
      * The only difference between what is implemented and this (the real-world solution)
      * is that we are looping over local data from the json file that we can just import.
      * 
-     * If I were fetching data from an actual API, I would use the axios utility I have created
-     * and run the data through the code below, then sending the data to the card components.
+     * If I were fetching data from an actual API, I would use the axios utility I have created 
+     * (api.js) and run the data through the code below, then sending the data to the card 
+     * components.
      */
     // state = {
     //     cardData: [],

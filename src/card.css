@@ -1,39 +1,94 @@
+/* Make the page background look different to the card background */
 
-/* Make thepage background look different to the card background */
-body{
+body {
     background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+    padding-bottom: 4rem;
 }
 
-.card{
+p {
+    margin: 0
+}
+
+/**
+ * Determines # of rows depending on screen width
+ */
+
+.row>div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.card {
     width: 20rem;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.25) !important
 }
 
-.card-body{
-    padding: 3rem 0 !important;
+.card-body {
+    padding: 0rem;
+    padding-left: 0rem
 }
 
-.card-text{
-    font-size: 1rem;
-    padding: 0.4rem 1.9rem;
+/**
+ * Image & image text
+ */
+.image-top {
+    position: relative;
+    text-align: center;
+}
+.card-img-text{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
-.container-fluid .row{
-    padding-top: 6rem;
+.card-logo{
+    padding-left: 0.5rem;
 }
 
-.overflow{
+.card-departure-date{
+    padding-left: 0.5rem;
+}
+
+/** 
+ * Text overflow! Though, this wont work on older browsers.
+ */
+ .card-title {
+    padding-left: 0.5rem;
     overflow: hidden;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
-.card-img-top{
-    transform: scale(1);
-    transition: transform 0.5s ease;
+.card-text {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    padding-bottom: 1rem;
 }
 
-.card-img-top:hover{
-    transform:scale(1.3)
+.card-duration{
+    padding-left: 0.5rem;
+}
+
+.card-price {
+    padding-left: 0.5rem;
+    font-size: 26px;
+}
+
+.card-price_unit {
+    font-size: 12px
+}
+
+.card-bottom-row-right {
+    padding: 0.5rem;
+    float: right;
+}
+
+.container-fluid .row {
+    padding-top: 1rem;
 }
